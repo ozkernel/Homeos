@@ -1,0 +1,32 @@
+title: "[Idea] "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Have an idea for HomeOS? Share it here!
+        A few sentences are enough, and you don't need to know how to code.
+
+        If something is broken, [report a bug](https://github.com/ozkernel/homeos/issues/new/choose).
+        For security issues, follow the [private reporting guide](https://github.com/ozkernel/homeos/blob/main/SECURITY.md).
+        Do not share passwords, API keys, setup tokens, or private details.
+  - type: textarea
+    id: idea
+    attributes:
+      label: What's your idea?
+      placeholder: "It would be great if HomeOS could..."
+    validations:
+      required: true
+  - type: textarea
+    id: benefit
+    attributes:
+      label: Why would it be useful? (optional)
+      placeholder: "This would help me..."
+    validations:
+      required: false
+  - type: textarea
+    id: details
+    attributes:
+      label: Anything else? (optional)
+      description: "Examples, links, or screenshots without private information."
+    validations:
+      required: false

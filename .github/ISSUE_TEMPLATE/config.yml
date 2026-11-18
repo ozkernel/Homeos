@@ -1,0 +1,11 @@
+blank_issues_enabled: false
+contact_links:
+  - name: "Feature requests and ideas — GitHub Discussions"
+    url: "https://github.com/ozkernel/homeos/discussions/new"
+    about: "Suggest improvements, services, and new features in Discussions instead of Issues."
+  - name: "Questions, installation help, and troubleshooting"
+    url: "https://github.com/ozkernel/homeos/discussions/new"
+    about: "Ask for help or discuss your HomeOS setup. Check the support guide first."
+  - name: "Security vulnerability — report privately"
+    url: "https://github.com/ozkernel/homeos/blob/main/SECURITY.md"
+    about: "Please do not put security vulnerabilities or private information in public bug reports."

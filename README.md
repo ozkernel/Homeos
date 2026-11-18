@@ -9,7 +9,7 @@ A free, self-hosted dashboard for your servers, network, media services and ever
 ![HomeOS v2.0.0](https://img.shields.io/badge/HomeOS-v2.0.0-orange)
 ![Docker](https://img.shields.io/badge/Docker-linux%2Famd64-2496ED?logo=docker&logoColor=white)
 
-[Install](INSTALLATION.md) · [Screenshots](SCREENSHOTS.md) · [Settings](CONFIGURATION.md) · [Help](SUPPORT.md) · [Report a bug](BUG_REPORTING.md)
+[Install](INSTALLATION.md) · [Screenshots](SCREENSHOTS.md) · [Settings](CONFIGURATION.md) · [Help](SUPPORT.md) · [Ideas](https://github.com/ozkernel/homeos/discussions) · [Report a bug](BUG_REPORTING.md)
 
 </div>
 
@@ -71,6 +71,7 @@ Open **http://127.0.0.1:3080** on the Docker host and follow the setup screen. T
 - **New to HomeOS?** Start with [Installation](INSTALLATION.md), then [Settings and integrations](CONFIGURATION.md).
 - **Something not working?** See [Help and troubleshooting](SUPPORT.md).
 - **Found a bug?** Follow the [bug reporting guide](BUG_REPORTING.md).
+- **Have an idea or question?** Use [GitHub Discussions](https://github.com/ozkernel/homeos/discussions).
 - **Security concern?** Use the [private reporting guidance](SECURITY.md), not a public issue.
 
 Before updating, back up your configuration **and** shared files. Never post passwords, API keys, setup tokens or unredacted logs.

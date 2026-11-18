@@ -1,0 +1,107 @@
+name: "Bug report — HomeOS V2.0.0"
+description: "Tell us what went wrong with HomeOS, Docker, Unraid, or the documentation."
+title: "[Bug] "
+labels:
+  - bug
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for helping improve HomeOS! You don't need to know how to code.
+        See the [bug reporting guide](https://github.com/ozkernel/homeos/blob/main/BUG_REPORTING.md)
+        if you need help filling this in.
+
+        **Please use Issues for bugs.** For ideas, suggestions, or general questions,
+        use [GitHub Discussions](https://github.com/ozkernel/homeos/discussions).
+
+        **Do not post security vulnerabilities here.** See the
+        [private security reporting guide](https://github.com/ozkernel/homeos/blob/main/SECURITY.md).
+        Never share passwords, API keys, setup tokens, cookies, private IPs,
+        hostnames, .env files, or unredacted logs and screenshots.
+  - type: checkboxes
+    id: before-submitting
+    attributes:
+      label: Before submitting
+      options:
+        - label: "I checked existing bug reports and the support guide, and this is a bug rather than an idea or question."
+          required: true
+        - label: "I removed any passwords, keys, tokens, private addresses, and personal information from my report."
+          required: true
+  - type: dropdown
+    id: affected-area
+    attributes:
+      label: Affected area
+      description: "Which part of HomeOS has the problem?"
+      options:
+        - Dashboard / widgets / charts
+        - Unraid / Proxmox monitoring
+        - UniFi / AdGuard Home
+        - Plex / Jellyfin / Seerr
+        - Sonarr / Radarr / Prowlarr / qBittorrent
+        - Files / notes / wiki / music
+        - Tasks / calendar / devices
+        - Login / accounts / first-time setup
+        - Settings / Demo Mode / appearance
+        - Docker / Unraid installation / updates
+        - Documentation
+        - Other or unsure
+    validations:
+      required: true
+  - type: input
+    id: version
+    attributes:
+      label: HomeOS version or Docker image tag
+      description: "Look in Settings → Diagnostics, or check your Docker image tag."
+      placeholder: "Example: 2.0.0"
+    validations:
+      required: true
+  - type: dropdown
+    id: host
+    attributes:
+      label: Host environment
+      options:
+        - Unraid
+        - Linux / Docker Compose
+        - Docker Desktop
+        - Other or unsure
+    validations:
+      required: true
+  - type: textarea
+    id: actual-behavior
+    attributes:
+      label: What happened?
+      description: "Explain the problem and any error message you saw."
+      placeholder: "I opened HomeOS and..."
+    validations:
+      required: true
+  - type: textarea
+    id: expected-behavior
+    attributes:
+      label: What did you expect to happen?
+    validations:
+      required: true
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: Steps to reproduce
+      description: "Tell us what you clicked or changed. Leave out passwords, private URLs, and API keys."
+      placeholder: |
+        1. Open HomeOS and go to ...
+        2. Click ...
+        3. See the problem ...
+    validations:
+      required: true
+  - type: textarea
+    id: redacted-evidence
+    attributes:
+      label: Logs or screenshots (optional)
+      description: "Include only short, safely redacted logs or screenshots. Never share .env, backups, credentials, or personal data."
+    validations:
+      required: false
+  - type: textarea
+    id: other-context
+    attributes:
+      label: Anything else? (optional)
+      description: "Browser, frequency, affected service version, or workarounds."
+    validations:
+      required: false
