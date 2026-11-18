@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>HomeOS</Name>
+  <Repository>ghcr.io/ozkernel/homeos:2.0.0</Repository>
+  <Registry>https://ghcr.io/ozkernel/homeos</Registry>
+  <Network>bridge</Network>
+  <MyIP/>
+  <Shell>sh</Shell>
+  <Privileged>false</Privileged>
+  <Support>https://github.com/ozkernel/homeos</Support>
+  <Project>https://github.com/ozkernel/homeos</Project>
+  <Overview>HomeOS v2.0.0 is the full release of this self-hosted home-lab dashboard for infrastructure, network and media services, with a personal workspace for files, notes and everyday tasks. Monitor Unraid and Proxmox, connect network and media services, and organise your home lab from one polished interface. New installations start in Demo Mode; after first-run administrator setup, switch to Live Mode in Settings to connect your services. Keep this container on a trusted LAN or VPN and complete the one-time setup-token flow shown in the container log.</Overview>
+  <Category>Productivity: Tools: Other</Category>
+  <WebUI>http://[IP]:[PORT:3080]/</WebUI>
+  <TemplateURL>https://raw.githubusercontent.com/ozkernel/homeos/main/templates/homeos.xml</TemplateURL>
+  <Icon>https://raw.githubusercontent.com/ozkernel/homeos/main/src/web/assets/homeos-logo.png</Icon>
+  <ExtraParams/>
+  <PostArgs/>
+  <DateInstalled/>
+  <DonateText/>
+  <DonateLink/>
+  <Requires/>
+  <Config Name="WebUI Port" Target="3080" Default="3080" Mode="tcp" Description="Host port for the HomeOS web interface. Leave at 3080 unless another service already uses that port." Type="Port" Display="always" Required="true" Mask="false">3080</Config>
+  <Config Name="HomeOS configuration" Target="/config" Default="/mnt/user/appdata/homeos/config" Mode="rw" Description="Persistent database, encryption key and setup-token storage. The host directory must be writable by the container's non-root UID/GID 1000." Type="Path" Display="always" Required="true" Mask="false">/mnt/user/appdata/homeos/config</Config>
+  <Config Name="HomeOS shared files" Target="/app/data/myfiles" Default="/mnt/user/appdata/homeos/myfiles" Mode="rw" Description="Persistent shared library for files, notes, wiki pages and music. The host directory must be writable by the container's non-root UID/GID 1000." Type="Path" Display="always" Required="true" Mask="false">/mnt/user/appdata/homeos/myfiles</Config>
+  <Config Name="Initial Demo Mode" Target="HOMEOS_DEMO" Default="true" Mode="" Description="Initial mode for a new HomeOS database. Keep true to explore sample data; switch to Live Mode later in Settings. Does not reset an existing database's saved mode." Type="Variable" Display="advanced" Required="false" Mask="false">true</Config>
+</Container>
