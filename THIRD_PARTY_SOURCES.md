@@ -7,7 +7,7 @@ This page covers the HomeOS v2.0.0 Linux amd64 production runtime with Debian 13
 | Filename | `HomeOS-third-party-source-linux-amd64.tar` |
 | v2.0.0 release asset URL (upload before Docker image publication) | `https://github.com/ozkernel/homeos/releases/download/v2.0.0/HomeOS-third-party-source-linux-amd64.tar` |
 | Size | 1,088,655,360 bytes |
-| SHA-256 | `9b1d8356c56de55409584584e50e26f22c468faa42768e626e3f341baf1709c9` |
+| SHA-256 | `570eeb84ab91707e8938c05abf7a3681fb34a3d1c75e0ca27e49ce51226b2926` |
 | Payload | 205 exact Debian source packages, Node.js v24.22.3, 668 upstream source files and 675 total archive files |
 
 `SHA256SUMS` records the SHA-256 digest of every archive file except itself.
